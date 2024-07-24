@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Instagram Clone</title>
+    <style>
+        .right-menu-pad {
+            padding-left: 35px;
+            padding-top: 20px;
+        }
+
+        .right-menu-size {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- bottom menu start -->
+    <nav class="navbar navbar-expand-xs d-md-none navbar-light bg-light fixed-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-2" href="#" title="Ana Sayfa"><i class="fa-solid fa-house"></i></a>
+            <!--home icon-->
+            <a class="navbar-brand" href="#" title="Keşfet"><i class="fa-regular fa-compass"></i></a>
+            <!--explore icon-->
+            <a class="navbar-brand" href="#" title="Reels"><i class="fa-regular fa-circle-play"></i></a>
+            <!--reels icon-->
+            <a class="navbar-brand" href="#" title="Yeni Göderi"><i class="fa-regular fa-square-plus"></i></a>
+            <!--create icon-->
+            <a class="navbar-brand" href="#" title="Mesajlar"><i class="fa-regular fa-message"></i></a>
+            <!--message icon-->
+            <a class="navbar-brand pe-2" href="#" title="Profil"><img src="https://picsum.photos/id/237/24/24" alt=""
+                    style="border-style: solid; border-width: 1px; border-radius: 50%; border-color: black;"></a>
+            <!--profile icon-->
+        </div>
+    </nav>
+    <!-- bottom menu end -->
+
+    <!-- right menu start -->
+    <!--fix lenmedi !!!!!!-->
+    <div class="container  p-0 m-0 ">
+        <div class="row">
+            <div class="col-md-2 col-lg-2 col-xl-3 ">
+                <ul class="nav flex-column d-none d-md-block ps-3 py-4 border border-bottom-0 border-end-2 border-top-0 border-start-0 "
+                    style="height: 100%;">
+                    <li class="nav-item  ">
+                        <a class="nav-link text-dark d-xl-none" aria-current="page" href="#" title="Instaagram"><i
+                                class="fa-brands fa-instagram fa-2xl"></i></a> <!--Instagram icon-->
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link text-dark d-none d-xl-block text-center " aria-current="page" href="#"
+                            title="Instagram" style="font-size: 20px; ">
+                            Instagram
+                        </a> <!--Instagram text-->
+                    </li>
+                    <li class="nav-item pt-5">
+                        <a class="nav-link text-dark" href="#" title="Ana Sayfa"><i
+                                class="fa-solid fa-house fa-2xl "></i><span class="d-none d-xl-inline ms-3 ">Ana
+                                Sayfa</span></a><!--home icon-->
+                    </li>
+
+                    <li class="nav-item pt-4">
+                        <a class="nav-link text-dark" href="#" title="Ara"><i
+                                class="fa-solid fa-magnifying-glass fa-2xl"></i><span
+                                class="d-none d-xl-inline ms-3 ">Ara</span></a><!--search icon-->
+                    </li>
+                    <li class="nav-item pt-4">
+                        <a class="nav-link text-dark " href="#" title="Keşfet"><i
+                                class="fa-regular fa-compass fa-2xl"></i><span
+                                class="d-none d-xl-inline ms-3 ">Keşfet</span></a><!--explore icon-->
+                    </li>
+                    <li class="nav-item pt-4">
+                        <a class="nav-link text-dark " href="#" title="Reels"><i
+                                class="fa-regular fa-circle-play fa-2xl"></i><span
+                                class="d-none d-xl-inline ms-3 ">Reels</span></a><!--reels icon-->
+                    </li>
+                    <li class="nav-item pt-4">
+                        <a class="nav-link text-dark " href="#" title="Mesajlar"><i
+                                class="fa-regular fa-message fa-2xl"></i><span
+                                class="d-none d-xl-inline ms-3 ">Mesajlar</span></a><!--message icon-->
+                    </li>
+                    <li class="nav-item pt-4">
+                        <a class="nav-link text-dark " href="#" title="Bildirimler"><i
+                                class="fa-regular fa-heart fa-2xl"></i><span
+                                class="d-none d-xl-inline ms-3 ">Bildirimler</span></a><!--notifications icon-->
+                    </li>
+                    <li class="nav-item pt-4">
+                        <a class="nav-link text-dark " href="#" title="Yeni Göderi"><i
+                                class="fa-regular fa-square-plus fa-2xl"></i><span
+                                class="d-none d-xl-inline ms-3 ">Oluştur</span></a><!--create icon-->
+                    </li>
+                    <li class="nav-item pt-4">
+                        <a class="nav-link text-dark " href="#" title="Profil"><img
+                                src="https://picsum.photos/id/237/30/30" alt=""
+                                style="border-style: solid; border-width: 1px; border-radius: 50%; border-color: black; "><span
+                                class="d-none d-xl-inline ms-3 ">Profil</span></a><!--profile icon-->
+                    </li>
+                    <li class="nav-item pt-5"><!--dropup start-->
+                        <div class="btn-group  dropup  ps-5 py-3">
+                            <button type="button " class=" dropdown-toggle btn-light border-0" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-bars fa-2xl"></i><!--icon-->
+                                </i><span class="d-none d-xl-inline ms-3 ">Daha Fazla</span>
+                            </button>
+                            <ul class="dropdown-menu ">
+                                <!-- Dropdown menu links -->
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-3"></i>Ayarlar</a>
+                                </li><!--settings-->
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="fa-solid fa-chart-line me-3"></i>Hareketlerin</a></li>
+                                <!--Hareketlerin -->
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="fa-regular fa-bookmark me-3"></i>Kaydedilenler</a></li>
+                                <!--bookmarks-->
+                                <li><a class="dropdown-item" href="#"><i class="fa-regular fa-sun me-3"></i>Görünümü
+                                        Değiştir</a></li><!--choose tema-->
+                                <li><a class="dropdown-item" href="#"><i class="fa-regular fa-circle-xmark me-3"></i>Bir
+                                        Sorun Bildir</a></li><!--report the problem-->
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li><!--line in dropup-->
+                                <li><a class="dropdown-item" href="#">Hesap Değiştir</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li><!--line in dropup-->
+                                <li><a class="dropdown-item" href="#">Çıkış Yap</a></li>
+                            </ul>
+                        </div>
+                    </li><!--dropup end-->
+                </ul>
+            </div><!-- right menu end -->
+
+            <div class="col-md-10 col-lg-10 col-xl-9">
+                <!--article   | kendi içinde de row lanacak-->
+
+                <!--tablet home page top bar-->
+                
+                <nav class="navbar navbar-light d-none d-md-block border border-bottom-2 border-start-0 border-end-0 border-top-0">
+                    <div class="container-fluid justify-content-start">
+                      <a class="nav-link me-2 fs-3 text-dark" href="#" >Senin İçin</a>
+                      <a class="nav-link fs-6 text-secondary" href="#" >Takip ettiklerin</a>
+                    </div>
+                  </nav>
+
+                <!--tablet home page top bar end-->
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--mobile home page-->
+
+    <!--mobile home page top bar-->
+
+    <nav
+        class="navbar navbar-expand-xs d-md-none navbar-light  fixed-top border border-bottom-2 border-start-0 border-end-0 border-top-0">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-2" href="#" title="Ana Sayfa">
+                <div class="dropdown">
+                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <strong class="text-dark fs-1">Senin İçin</strong>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <li><button class="dropdown-item" type="button">Takip<i
+                                    class="fa-solid fa-children ms-5"></i></button></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li><!--line in dropup-->
+                        <li><button class="dropdown-item " type="button">Favoriler<i
+                                    class="fa-regular fa-star  ms-4 "></i></button></li>
+                    </ul>
+                </div>
+            </a>
+
+            <form class="d-flex justify-content-end">
+
+                <div class="form-group has-search">
+                    <span class="fa-solid fa-magnifying-glass form-control-feedback"></span>
+                    <input type="text" class="form-control bg-light" placeholder="Search">
+                </div>
+            </form>
+            <a class="nav-link text-dark d-flex justify-content-end" href="#" title="Bildirimler"><i
+                    class="fa-regular fa-heart fa-2xl"></i><span
+                    class="d-none d-xl-inline ms-3 ">Bildirimler</span></a><!--notifications icon-->
+        </div>
+    </nav>
+
+    <!--mobile home page top bar end-->
+
+
+    <!--mobile home page end-->
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://kit.fontawesome.com/75a42b7a66.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
